@@ -90,6 +90,7 @@ const AppSidebar = ({ isSidebarOpen, toggleSidebar }) => {
               <AIStudioColorIcon className="w-7 h-7 text-blue-400 mr-2 flex-shrink-0" />
             </button>
             <h1 className="text-xl font-semibold text-white flex-grow">Google AI Studio</h1>
+
           </>
         ) : (
           <button onClick={toggleSidebar} className="p-2 rounded-md hover:bg-gray-800 h-full w-full flex items-center justify-center" aria-label="Expand sidebar">

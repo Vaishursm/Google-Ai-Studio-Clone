@@ -229,6 +229,24 @@ export const BuildIcon = (props) => ( // For Build
 
 );
 
+export const ProfilePicIcon = (props) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill="none" 
+    viewBox="0 0 24 24" 
+    strokeWidth={1.5} 
+    stroke="currentColor" 
+    className="size-6"
+    {...props}
+  >
+    <path 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      d="M15.75 9A3.75 3.75 0 1 1 8.25 9a3.75 3.75 0 0 1 7.5 0Zm.75 7.5a6.75 6.75 0 0 0-9 0m4.5-12.75a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" 
+    />
+  </svg>
+);
+
 export const ArrowSmallLeftIcon = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
   <path strokeLinecap="round" strokeLinejoin="round" d="m7.49 12-3.75 3.75m0 0 3.75 3.75m-3.75-3.75h16.5V4.499" />

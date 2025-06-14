@@ -6,10 +6,15 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @apply bg-gray-900 text-gray-200; /* Default dark theme */
+    @apply bg-black text-gray-200; /* Default dark theme, with black base for HomePage */
   }
   body, #root {
     @apply h-full min-h-screen;
+    @apply bg-gray-900; /* Re-apply default app background for pages other than HomePage */
+  }
+  /* Ensure HomePage overrides the body bg if needed, or that body bg doesn't conflict */
+  body.homepage-bg, body.homepage-bg #root {
+    @apply bg-black; /* Specific class for HomePage if needed, or rely on html bg */
   }
 }
 
@@ -19,7 +24,7 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-gray-800;
+  @apply bg-gray-850; /* Slightly lighter track for better visibility on dark backgrounds */
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-gray-600 rounded-full;

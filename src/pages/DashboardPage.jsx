@@ -17,7 +17,8 @@ import {
   EllipsisVerticalIcon,
   PhotoIcon, // For right toolbar
   Bars3Icon,
-  RunSettings, // For right toolbar
+  RunSettings,
+  ProfilePicIcon, // For right toolbar
 } from '../constants';
 
 
@@ -153,7 +154,7 @@ const DashboardPage = () => {
       {/* Right Vertical Toolbar */}
       <aside className="w-16 bg-gray-850 border-l border-gray-700 flex flex-col items-center py-4 space-y-4 flex-shrink-0">
         <button className="p-2 rounded-full hover:bg-gray-700/60" aria-label="User Account Options">
-          <img src="/placeholder-avatar.png" alt="User avatar" className="w-8 h-8 rounded-full" />
+          <ProfilePicIcon className="w-6 h-6 text-gray-400" />
         </button>
         <button className="p-2 rounded-md hover:bg-gray-700" aria-label="Parameters">
           <RunSettings className="w-6 h-6 text-gray-400" />
