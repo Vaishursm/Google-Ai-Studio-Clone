@@ -1,10 +1,9 @@
-import React from 'react';
 
-const WhatsNewCard = ({ imageUrl, title, description, newBadge }) => {
+const WhatsNewCard = ({ imageComponent, title, description, newBadge }) => {
   return (
     <div className="bg-gray-800 p-4 rounded-lg flex items-start space-x-4 hover:bg-gray-700/70 transition-colors cursor-pointer">
-      {imageUrl && <img src={imageUrl} alt={title} className="w-16 h-16 rounded-md object-cover flex-shrink-0 mt-1" />}
-      {!imageUrl && <div className="w-16 h-16 rounded-md bg-gray-700 flex-shrink-0 mt-1"></div>}
+      {imageComponent && imageComponent}
+      {!imageComponent && <div className="w-16 h-16 rounded-md bg-gray-700 flex-shrink-0 mt-1"></div>}
       <div>
         <div className="flex items-center mb-1">
           <h4 className="text-base font-semibold text-gray-100">{title}</h4>
