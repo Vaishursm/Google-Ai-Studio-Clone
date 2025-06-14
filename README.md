@@ -75,7 +75,7 @@ Follow these instructions to get the project running on your local machine.
 ## Known Limitations & Design Deviations
 
 *   **No Backend / API Integration:**
-    *   The application is currently a **frontend-only clone**. No actual calls to the Gemini API are implemented.
+    *   The application is currently a **frontend-only clone**. No actual calls are implemented.
     *   Buttons like "Get API key", "Run" prompt, "Save version", etc., are UI placeholders and do not perform backend operations.
 *   **Static Content:**
     *   The "History" section in the `AppSidebar` is static and does not reflect actual user activity.
