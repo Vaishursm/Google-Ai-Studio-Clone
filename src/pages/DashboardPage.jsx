@@ -109,7 +109,7 @@ const DashboardPage = () => {
             <nav className="flex items-center space-x-4 text-sm">
               <a href="#/app" className="text-white font-semibold hover:text-gray-300">Studio</a>
               <a href="#/app" className="text-gray-400 hover:text-gray-300">Dashboard</a>
-              <a href="#/app" className="flex items-center text-gray-400 hover:text-gray-300">
+              <a href="#/app  " className="flex items-center text-gray-400 hover:text-gray-300">
                 Documentation <ArrowTopRightOnSquareIcon className="w-3 h-3 ml-1" />
               </a>
             </nav>
